@@ -1,22 +1,12 @@
-import { h, Component } from 'preact';
-import { Router } from 'preact-router';
+import { LanguageProvider, LanguageSelector, Text } from './shared/language';
 
-import Header from './header';
-
-// Code-splitting is automated for routes
-import Home from '../routes/home';
-import Profile from '../routes/profile';
-
-export default class App extends Component {
-  /** Gets fired when the route changes.
-   *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
-   *	@param {string} event.url	The newly routed URL
-   */
-  handleRoute = (e) => {
-    this.currentUrl = e.url;
-  };
-
-  render() {
-    return <div id="app"></div>;
-  }
+export default function App() {
+  return (
+    <LanguageProvider>
+      <div className="App">
+        <LanguageSelector />
+        <Text id="home" />
+      </div>
+    </LanguageProvider>
+  );
 }
