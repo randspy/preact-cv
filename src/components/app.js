@@ -1,11 +1,16 @@
-import { LanguageProvider, LanguageSelector, Text } from './shared/language';
+import { LanguageProvider } from './shared/language';
+import './app.scss';
 
 export default function App() {
   return (
     <LanguageProvider>
       <div className="App">
-        <LanguageSelector />
-        <Text id="home" />
+        <section class="primary-lightest-bg-color">Home</section>
+        <section class="primary-bg-color">Expertise</section>
+        <section class="primary-lightest-bg-color">Skills</section>
+        <section class="secondary-bg-color">Experience</section>
+        <section class="primary-lightest-bg-color">Education</section>
+        <section class="primary-bg-color">Contact</section>
       </div>
     </LanguageProvider>
   );
