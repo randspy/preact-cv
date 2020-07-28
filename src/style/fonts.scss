@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'loraitalic';
+  src: url('../assets/fonts/lora-italic-webfont.woff2') format('woff2'),
+    url('../assets/fonts/lora-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url('../assets/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+    url('../assets/fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hind_madurailight';
+  src: url('../assets/fonts/hindmadurai-light-webfont.woff2') format('woff2'),
+    url('../assets/fonts/hindmadurai-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$primary-font: 'montserratbold', sans-serif;
+$second-font: 'loraitalic', serif;
+$third-font: 'hind_madurailight', sans-serif;
+
+.primary {
+  font-family: $primary-font;
+}
+
+.secondary {
+  font-family: $second-font;
+}
+
+.third {
+  font-family: $third-font;
+}
