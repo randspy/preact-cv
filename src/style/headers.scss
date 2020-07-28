@@ -1,0 +1,9 @@
+$header-sizes: 2.5, 2, 1.5, 1.125;
+
+@each $value in $header-sizes {
+  $idx: index($header-sizes, $value);
+  h#{$idx} {
+    font-size: #{$value}rem;
+    line-height: #{$value * 1.3}rem;
+  }
+}
