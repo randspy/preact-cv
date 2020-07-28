@@ -1,0 +1,23 @@
+$primary-color: #1972a9;
+$primary-dark-color: #214054;
+$primary-lightest-color: #fafdff;
+$secondary-color: #f8c687;
+
+$colors: (
+  'primary': $primary-color,
+  'primary-dark': $primary-dark-color,
+  'primary-lightest': $primary-lightest-color,
+  'secondary': $secondary-color,
+);
+
+@each $key, $value in $colors {
+  .#{$key}-color {
+    color: #{$value};
+  }
+}
+
+@each $key, $value in $colors {
+  .#{$key}-bg-color {
+    background-color: #{$value};
+  }
+}
