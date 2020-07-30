@@ -1,0 +1,73 @@
+@import 'style/colors.scss';
+@import 'style/fonts.scss';
+@import 'style/headers.scss';
+
+$height: 5rem;
+
+.menu--container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: $height;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  box-shadow: 0px 0px 0.8rem 0px rgba(0, 0, 0, 0.5);
+}
+
+.menu--mobile {
+  display: flex;
+}
+
+.menu--desktop {
+  display: none;
+}
+
+.menu--language {
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: $height;
+}
+
+.menu--button {
+  background-color: $primary-dark-color;
+  color: $primary-lightest-color;
+  border: none;
+  font-family: $primary-font;
+  font-size: $h4;
+  &:focus,
+  &:hover {
+    outline: none;
+    color: $secondary-color;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu--container {
+    bottom: unset;
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu--container {
+    grid-template-columns: 13rem auto;
+  }
+  .menu--mobile {
+    display: none;
+  }
+  .menu--desktop {
+    display: flex;
+    background-color: $primary-dark-color;
+    padding-left: 0.6rem;
+  }
+  .menu--button {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}

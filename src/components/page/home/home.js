@@ -6,7 +6,7 @@ const Home = () => {
     <section class="primary-lightest-bg-color primary-dark-color">
       <div className={styles['home--section']}>
         <div className={styles['home--content']}>
-          <h1 class="primary mb-0">
+          <h1 class="primary mt-0 mb-0 pt-2">
             <Text id="home-title" />
           </h1>
           <h3 class="secondary normal-weight">

@@ -4,7 +4,8 @@
   font-size: 1.125rem;
   border-radius: 0.625rem;
   border: 2px solid transparent;
-  &:focus {
+  &:focus,
+  &:hover {
     outline: none;
     border: 2px solid $secondary-dark-color;
   }
